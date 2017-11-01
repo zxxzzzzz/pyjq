@@ -1,8 +1,17 @@
+'''
+    html内容：
+    <p id='pid'>zxxz<p>
+    转为dom数据：
+    attr = {'id':'pid'}
+    data = 'zxxz'
+    children = None
+    type = 'p'
+'''
 class Dom:
     def __init__(self):  # 
         self.attrs ={} #key:value
-        self.data = ''
-        self.children = [] # class:dom
+        self.data = '' #该tag下的内容
+        self.children = [] # 子dom集合
         self.type = '' #div img标签名
     def getData(self):
         return self.data
